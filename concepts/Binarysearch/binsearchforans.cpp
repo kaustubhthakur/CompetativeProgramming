@@ -9,7 +9,8 @@ int good(int x)
 void solve()
 {
     cin >> w >> h >> n;
-    int l = 0, r = 1000;
+    int l = 0, r = 1;
+    while(!good(r) ) r*=2;
     while (r > l + 1)
     {
         int m = (l + r) / 2;
