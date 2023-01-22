@@ -1,2 +1,2 @@
 # CompetativeProgramming 
-# Tons of Logic
+# Lots of Logic
