@@ -1,26 +1,22 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-const int mod = 1e9+7;
-void solve()
-{
-    int n;
-    cin>>n;
-    n = n%mod;
-    int cnt=0;
-    for(int i=1;i<=n;++i)
-    {
-        if(i%2==0 && i%3==0 && i%4==0 && i%5==0 && i%6==0 && i%7==0 && i%8==0 && i%9==0 && i%10==0)
-        {
-            cnt++;
-        }
-    }
-    cout<<cnt<<endl;
-}
+long long  i,j,k,n,m,t;
 int main()
 {
-
-
-    solve();
-
-    return 0;
+cin>>t;
+while(t--)
+{
+cin>>n>>m;
+m-=n; int a[n];
+for(int i=0;i<n;i++)
+{
+cin>>a[i];
+m-=a[i];
+}
+sort(a,a+n);
+m-=a[n-1];
+m+=a[0];
+cout<<((m<0)?"NO":"YES")<<endl;
+}
+return 0;
 }
