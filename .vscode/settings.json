@@ -5,6 +5,7 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "utility": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "vector": "cpp"
     }
 }

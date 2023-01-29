@@ -2,12 +2,13 @@
 using namespace std;
 void solve()
 {
-  
-string str;
-cin>>str;
-cout<<str.append(str)<<endl;
 
-
+    int n;
+    cin>>n;
+    for(int i=2;i*i<=n;i++)
+    {
+        if(n%i==0) return;
+    }
 }
 int main()
 {
@@ -16,7 +17,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        solve();
+    solve();
     }
 
     return 0;
