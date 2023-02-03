@@ -3,22 +3,16 @@ using namespace std;
 void solve()
 {
 
-    int n;
-    cin>>n;
-
-vector<int> a(n);
-for(int i=0;i<n;++i)
-{
-    cin>>a[i];
-}
-int sum2=0;
-for(int i=0;i<n;++i)
-{
-    if(a[i]<0)
-    {
-        sum2+=abs(a[i]);
-    }
-}
+   long long a,b,c,d;
+   cin>>a>>b>>c>>d;
+   if(a==0)
+   {
+    cout<<1<<endl;
+   }
+   else 
+   {
+cout<<a+min(b,c)*2+min(a+1,abs(b-c)+d)<<endl;
+   }
 }
 int main()
 {
