@@ -26,7 +26,8 @@ else if(str.size()==n-1)
     for(int i=0;i<n;i++)
     if(str[i]-'0' == str[i+1]-'0')
     {
-swap(str[i+1],str[i+1]+2)
+swap(str[i+1],str[i+1]+2);
+
     }
 }
 }

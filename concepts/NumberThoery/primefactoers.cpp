@@ -10,7 +10,7 @@ int main()
     {
         cout<<0<<endl;
     }
-    for(int i=2;i<=n;i++)
+    for(int i=2;i*i<=n;i++)
     {
         while(n%i==0)
         {

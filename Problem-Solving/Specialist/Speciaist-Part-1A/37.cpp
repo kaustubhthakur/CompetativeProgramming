@@ -18,7 +18,7 @@ minY = min(dy,minY);
 maxY = max(dy,maxY);
 
 }
-cout<<2*(maxX+maxY-minX-minY)<<endl;;
+cout<<2*(maxX+maxY-minX-minY)<<endl;
 
 
 }
