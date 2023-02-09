@@ -19,4 +19,5 @@ int main()
 		cout << s << endl;
 		fill(a, a + k, 0);
 	}
+	return 0;
 }
