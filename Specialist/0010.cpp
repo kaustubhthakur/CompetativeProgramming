@@ -11,4 +11,5 @@ for(i=1;i<=n;++i)cout<<a[i]<<' ';cout<<'\n';
 }
 main(){
 for(cin>>n;cin>>n;solve());
+
 }
