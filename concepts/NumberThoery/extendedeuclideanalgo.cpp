@@ -5,7 +5,6 @@ using namespace std;
 
 int gcdExtended(int a, int b, int *x, int *y)
 {
-	// Base Case
 	if (a == 0)
 	{
 		*x = 0;
@@ -26,7 +25,9 @@ int gcdExtended(int a, int b, int *x, int *y)
 
 int main()
 {
-	int x, y, a = 35, b = 15;
+	int x, y, a,b;
+	cin>>a>>b;
+
 	int g = gcdExtended(a, b, &x, &y);
 	cout << " "<< a/g << "  " << b/g<<"  "<< g << endl;
 	return 0;

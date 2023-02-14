@@ -8,6 +8,8 @@
         "map": "cpp",
         "vector": "cpp",
         "regex": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "xiosbase": "cpp",
+        "algorithm": "cpp"
     }
 }
