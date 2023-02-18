@@ -1,26 +1,36 @@
 #include <bits/stdc++.h>
 using namespace std;
+const int mod = 1e9+7;
+long long binpow(long long a, long long b) {
+    if (b == 0)
+        return 1;
+    long long res = binpow(a, b / 2);
+    if (b % 2)
+        return res * res * a;
+    else
+        return res * res;
+}
 void solve()
 {
-int n;
-cin>>n;
-vector<unsigned> a(n);
-for(int i=0;i<n;i++) cin>>a[i];
 
-int max_sub = 0;
-int maxi =0;
-for(int i=0;i<n;i++)
-{
-    max_sub +=a[i];
-    max_sub++;
-maxi = max(maxi,max_sub);
-}
-cout<<maxi<<endl;
+
+long long a,n;
+cin>>a>>n;
+
+long long ans = binpow(a,n);
+ans = ans%mod;
+cout<<ans%mod<<endl;
 
 }
 int main()
 {
-solve();
+    int t;
+    cin>>t;
+    while(t--)
+    {
+    solve();
+    
+    }
 
 
     return 0;

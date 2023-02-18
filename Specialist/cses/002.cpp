@@ -1,26 +1,36 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main()
+const int mod = 1e9+7;
+void solve()
 {
-int n;
-cin>>n;
-int x ,y;
+    int n;
+    cin>>n;
+    string str;
+    int ans ;
+    int cnt=0;
+
 for(int i=0;i<n;i++)
 {
-    cin>>x>>y;
+    cin>>str[i];
 }
-int cnt =1;
-int j;
-
-for(j=1;j<n;j++)
+for(int i=0;i<n;i++)
 {
-    if(x>=y)
+    for(int j=n-1;j>0;j--)
     {
-       cnt++;
+        ans = ~str[i];
+        ans = ~str[j];
+        cnt++;
     }
 }
-cout<<cnt+1<<endl;
+cout<<cnt<<endl;
+}
 
-return 0;
-
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+solve();
+    }
 }
