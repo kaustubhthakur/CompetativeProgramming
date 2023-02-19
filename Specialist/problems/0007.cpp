@@ -4,19 +4,21 @@ void solve()
 {
     int n,k;
     cin>>n>>k;
-    vector<int>a(n);
-    for(int i=0;i<n;i++) cin>>a[i];
+    vector<int>a(2*n);
+    for(int i=0;i<2*n;i++) cin>>a[i];
+
+    sort(a.begin(),a.end());
     for(int i=0;i<n;i++)
     {
-        if(abs(a[i+1]-a[i])>=k)
+        if(abs(a[n+i]-a[i])<k)
         {
-            cout<<"YES"<<endl;
+            cout<<"NO"<<endl;
         return ;
         }
 
 
     }
-    cout<<"NO"<<endl;
+    cout<<"YES"<<endl;
      
 }
 
