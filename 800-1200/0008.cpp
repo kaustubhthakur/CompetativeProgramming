@@ -16,6 +16,10 @@ void solve()
     {
         cout<<st.size()<<endl;
     }
+    else 
+    {
+        
+    }
 }
 int main()
 {
